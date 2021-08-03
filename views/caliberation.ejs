@@ -1,0 +1,39 @@
+<html>
+    <%- include("./partials/header.ejs") %>
+    <body>
+      <section class="container section scrollspy" id="service">
+        <div class="row">
+          <div class="col s12 l12">
+            <h2 class="indigo-text text-darken-4" >Services</h2>
+         <ul class="collection" id="myList">
+        <% datas.forEach(data => { %>
+            <% if (data.catg === 'caliberation' && data.type === 's') { %>  
+              <li class="collection-item"> <%= data.name %> </li>
+              <%}%>
+          <% }) %>  
+         </ul>
+          <h2 class="indigo-text text-darken-4" >Equipments</h2>
+          <ul class="collection" id="myList">
+          <% datas.forEach(data => { %>
+            <% if (data.catg === 'caliberation' && data.type === 'e') { %>  
+              <li class="collection-item"> <%= data.name %> </li>
+              <%}%>
+          <% }) %> 
+
+            </ul>
+          </section>
+
+          <section class="container section scrollspy" id="services">
+            <div class="row" >
+              <div class="col s12 l12">
+                <h2 class="indigo-text text-darken-3" >For, HVAC Clean Room/Clean Equipment VALIDATION:</h2>
+          <p>All Standard Air Validation Reports Confirm to the requirements of  ISO -14644-1/2/3,EC-Guidelines & Schedule –M.
+            However if the client desires, the formats are modified to meet the specified requirements. All raw data is recorded on printed forms in duplicate and stored securely.
+            </p>
+        </div>
+      </div>
+    </section> 
+       <!-- footer   -->
+       <%- include("./partials/footer.ejs") %>
+    </body>
+</html>

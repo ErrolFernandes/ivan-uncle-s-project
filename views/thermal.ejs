@@ -1,0 +1,42 @@
+<html>
+    <%- include("./partials/header.ejs") %>
+    <body>
+      <section class="container section scrollspy" id="service">
+        <div class="row">
+          <div class="col s12 l12">
+            <h2 class="indigo-text text-darken-4" >Services</h2>
+         <ul class="collection" id="myList">
+        <% datas.forEach(data => { %>
+            <% if (data.catg === 'thermal' && data.type === 's') { %>  
+              <li class="collection-item"> <%= data.name %> </li>
+              <%}%>
+          <% }) %>  
+         </ul>
+          <h2 class="indigo-text text-darken-4" >Equipments</h2>
+          <ul class="collection" id="myList">
+          <% datas.forEach(data => { %>
+            <% if (data.catg === 'thermal' && data.type === 'e') { %>  
+              <li class="collection-item"> <%= data.name %> </li>
+              <%}%>
+          <% }) %> 
+
+            </ul>
+          </section>
+
+          <section class="container section scrollspy" id="services">
+            <div class="row" >
+              <div class="col s12 l12">
+                <h2 class="indigo-text text-darken-3" >For, Thermal Validation:</h2>
+          <p>
+            All standard Calibration reports confirm to the requirements of ISO 17025.
+            However if the client desires, the formats are modified to meet the specified requirements. All raw data is recorded on printed forms in duplicate and stored securely. All Validation reports are printed in 21 CFR COMPLIANT FORMAT.
+            Coloured graphs of all trends are provided. The graphs indicate the value of minimum-maximum temperatures.
+            F0 values during sterilization hold periods in case of sterilizers and also give a summation of the cycle.
+            In addition Challenges (sterilization start/stop) are indicated. Data sheets of all cycles are provide. A backup of all is safely ensured</p>
+          </div>
+        </div>
+      </section> 
+       <!-- footer   -->
+       <%- include("./partials/footer.ejs") %>
+    </body>
+</html>

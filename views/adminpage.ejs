@@ -1,0 +1,77 @@
+<html>
+    <%- include("./partials/header.ejs") %>
+    <body>
+     
+           <ul id="myList"> 
+           <h1>Services</h1>
+            <% datas.forEach(data => { %>
+                <% if (data.type === "s") { %> 
+              <li> <%= data.name %> 
+                <a class="delete" data-doc="<%= data._id %>">
+                  <img src="/trashcan.svg" alt="delete icon">
+                </a>
+                  
+            </li>
+              <%}%>
+             <% }) %>  
+            
+             <h1>Equipments</h1>
+            <% datas.forEach(data => { %>
+                <% if (data.type === "e") { %> 
+              <li> <%= data.name %> 
+                <a class="delete" data-doc="<%= data._id %>">
+                  <img src="/trashcan.svg" alt="delete icon">
+                </a>
+                  
+            </li>
+              <%}%>
+             <% }) %>  
+                
+           </ul>
+
+           <form action="/Adminpage" method="POST">
+           
+            <label for="catg">Select Type of Service/Equipment</label>
+            <div class="col s12 l3 ">
+            <select class="browser-default" name="catg" id="catg" required>
+              <option value="air">Air Validation</option>
+              <option value="nitrogen">Nitrogen Validation</option>
+              <option value="thermal">Thermal Validation</option>
+              <option value="caliberation">Caliberation</option>
+              <option value="client">Client</option>
+            </select>
+            </div>
+            <label for="type">type:</label>
+            <div class="col s12 l3 ">
+            <select class="browser-default" name="type" id="type"  required>
+              <option value="s">Service</option>
+              <option value="e">Equipment</option>
+              <option value="c">Client</option> 
+            </select>
+            </div>
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" required>
+            <button>Add</button>
+
+           
+          </form>   
+          
+  <script>
+    const trashcan = document.querySelector('a.delete');
+
+    trashcan.addEventListener('click', (e) => {
+      const endpoint = `/Admin/${trashcan.dataset.doc}`;
+
+      fetch(endpoint, {
+        method: 'DELETE',
+      })
+      .then(response => response.json())
+      .then(data => window.location.href = data.redirect)
+      .catch(err => console.log(err));
+    });
+    
+  </script>
+       <!-- footer   -->
+       <%- include("./partials/footer.ejs") %>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!-- <div class="create-blog content">
+    <form action="/Admin" method="POST">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" required>
+      <label for="password">password</label>
+      <input type="password" id="password" name="password" required>
+      
+      <button class=" btn   " id="submt">LOGIN</button>
+    </form>
+  </div> -->
+  <html>
+    <%- include("./partials/header.ejs") %>
+    <body>
+     
+  <div class="row container section scrollspy" id="servies">
+    <div class="col s12 l12">
+
+      <div class="container">
+          <div class="card ">
+            <div class="card-content white-text">
+              <span class="card-title center">Log In</span>
+              <div class="row">
+
+                <div class="col s12 l5 offset-l3">
+                <form action="/Admin" method="POST">
+                 
+                  <div class="input-field " id="input">
+                    <i class="material-icons prefix">email</i>
+                    <input type="text" id='email' name="email">
+                    <label for="email"><span class="text"> Email Id</span></label>
+                  </div>
+                  <div class="input-field ">
+                    
+                    <i class="material-icons prefix"> pin</i>
+
+                    
+                    <input type="password" id='password' name="password">
+                    <label for="password"><span class="white-text"> Password</span></label>
+
+
+
+                    
+                    
+                  </div>
+            
+            
+                  <div class="input-field center">
+                    <!-- <div class="btn">subbmit</div> -->
+                    <button class=" btn   " id="submt">LOGIN</button>
+                  </div>
+                </form>
+                </div>
+              </div>
+            </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</section>
+
+ <!-- footer   -->
+ <%- include("./partials/footer.ejs") %>
+</body>
+</html>

@@ -1,0 +1,362 @@
+:root {
+  --primary-color: indigo;
+}
+
+header{
+    background-size: relative;
+    background-position: center;
+    min-height: 125px;
+    background-color:var(--primary-color);
+    
+   
+    }
+        
+    .page-footer{
+    background-color: var(--primary-color);
+    }
+
+    #search{
+    background-color: white;
+    border-radius: 25px;
+    height: 30px;
+    
+    }
+    #search[type~="text"]{
+      padding-left: 15px;
+    }
+    
+    .right{
+      padding-top: 20px;
+    }
+
+     #services{
+      border-style:groove;
+      border-color:var(--primary-color) ;
+      border-radius: 15px;
+      margin-top: 10px;     
+     } 
+   
+    #home:hover{
+      background-color: white;
+      color:var(--primary-color);
+      border-radius: 25px;
+      display: inline;
+      padding: 12px;     
+    }
+    
+    #servicess{
+      margin-left: 10px;
+    }
+    #servicess:hover{
+      background-color: white;
+      color:var(--primary-color);
+      border-radius: 25px;
+      display: inline;
+      padding: 12px;
+    }
+     .documents embed{
+       margin-left: 100px;
+       margin-bottom: 60px;
+      border-bottom: black;
+     }
+    
+    
+    #clients:hover{
+      background-color: white;
+      color:var(--primary-color);
+      border-radius: 25px;
+      display: inline;
+      padding: 12px;
+    }
+    #clients{
+      margin-left: 10px;
+    }
+
+    #contacts:hover{
+      background-color: white;
+      color:var(--primary-color);
+      border-radius: 25px;
+      display: inline;
+      padding: 12px;
+    }
+    #contact{
+      margin-left: 10px;
+    }
+
+    #submit{
+      background-color: var(--primary-color);
+    }
+    #submit[type~="text"]{
+      color: #fff;
+    }
+    nav ul a{
+      display: inline;
+      padding-left: 10px;
+    }
+
+    .card{
+        background-color: var(--primary-color);
+      
+      }
+ 
+      body {
+    font-family: Arial, Helvetica, sans-serif;
+     }
+  
+  .flip-card {
+    background-color:white;
+    width: 250px;
+    height: 190px;
+    perspective: 100000px;
+    margin-bottom: 90px;
+    /* border-radius: 300px; */
+    margin-bottom: 80px;
+    }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 140%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+    background-color: white;
+    }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    border-radius: 20px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color:white;
+    color: black;
+    margin-bottom: 90px;
+
+  }
+  
+  .flip-card-back {
+    background-color: var(--primary-color);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  div.card-content-white{
+    border-radius: 20px;
+  } 
+  #services {
+    padding-left: 20px;
+  }
+  #services ul li{
+    padding-left: 20px;
+  }
+
+    #bot{
+      background-color: var(--primary-color);
+    }
+
+    .card{
+        background-color: var(--primary-color);
+    }
+
+    .page-footer{
+      background-color: indigovar(--primary-color);
+    }
+
+  
+
+    .clie{
+       color: var(--primary-color);
+    }
+
+    #edit{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+   .input-field{
+    padding-top: 18px;  
+  }
+
+  .label-icon{
+    color: black;
+  }
+ 
+  #sub{
+    margin-left: 180px;
+    background-color: var(--primary-color);
+    }
+
+#edit{
+   margin-top: 20px;  
+}
+
+#foot{
+   margin-top: 20px;
+   
+}
+input {
+    width: 100%;
+  }
+  nav form {
+    height: 5;
+}
+#menuu{
+  padding-top: 7px;
+}
+#submt{
+  background: white;
+  color: var(--primary-color);
+  text-align: center;
+  margin-left: 40px;
+  font-weight: bold;
+  
+}
+#servies{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#collections{
+  border-color: var(--primary-color);
+}
+#data-tar{
+margin-top: 20px;
+margin-left: 130px;
+background: var(--primary-color);
+}
+#data-targ{
+ margin-left: 50px;
+ margin-top: 20px;
+ background: var(--primary-color);
+}
+#adding{
+  margin-left: -70px;
+  margin-top: 20px;
+  background: var(--primary-color);
+}
+#cont{
+  
+  color: var(--primary-color);
+}
+#submitt{
+  background: var(--primary-color);
+  margin-left: 50px;
+}
+#thingss{
+  color: var(--primary-color);
+}
+#clientss{
+  color: var(--primary-color);
+}
+#ser{
+  color: var(--primary-color);
+}
+#mobile{
+  color: var(--primary-color);
+}
+#services{
+  margin-bottom: 40px;
+}
+.certificate{
+  margin-bottom: 50px;
+}
+body{
+  background-color: rgb(240, 233, 245);
+}
+.standard{
+  padding-left: 50px;
+}
+.addresss{
+  margin-left: 40px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+      nav .brand-logo {
+        position:relative;
+        color: #fff;
+        display: inline-block;
+          font-size: 20px; 
+        padding: 0;
+      }
+      #search{
+      background-color: white;
+      border-radius: 25px;
+      height: 30px;
+      width: 130px;
+
+      }
+      #services p{
+        text-align: center;
+      }
+      #services li{
+        padding-left: 20px;
+      }
+      .documents embed{
+        margin-left: 60px;
+        margin-bottom: 60px;
+       border-bottom: black;
+       width: 300px;
+       height: 300px;
+      }
+      #things{
+        text-align: center;
+        margin-top: 0px;
+        
+      }
+      #images{
+        margin-top: 30px;
+
+      }
+      #tocenter{
+        align-items: center;
+      }
+
+      .flip-card {
+        
+        border-radius: 300px;
+        margin-bottom: 80px;
+        margin-top: 30px;
+        margin-left: 70px;
+
+        
+
+      }
+      #flippy{
+      padding-top: 0px;
+      }
+      #cont{
+      text-align: center;
+      }
+      #sub{
+      margin-left: 40%;
+      }
+      #submt{
+      margin-left: 10px;
+
+      }
+      #services h2{
+        text-align: center;
+      }
+      .documents embed{
+        margin-left: 8px;
+      }
+      #services p{
+        tab-size: 2;
+      }
+      .addresss{
+        padding-right: 35px;
+      }
+     
+   
+}

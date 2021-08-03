@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="/Asset 2.png" type="image/png" sizes="16x16">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <!-- jquery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <title>ACME | <%=title%></title>
+
+  <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+  <header>
+     <!-- nav bar -->
+    <nav class="nav-wrapper transparent z-depth-0">
+      
+        <a href="" class="brand-logo center" id="logoo"><span id="acme"><img src ="/eeeeAsset 3.png" width="30px" height="36px">  ACME CLEANROOM SERVICES</span></a><br>
+        <a href="" class="sidenav-trigger" data-target="mobile-menu" id="menuu">
+        <i class="material-icons">menu</i></a>
+        <div class=" container">
+        <ul class=" left hide-on-med-and-down" id="jadu">
+          <li><a href="/Home" id="Home">Home</a></li>
+          <li><a href="/services" id="servicess">Services</a></li>
+          <li><a href="/clients" id="clients">Clients</a></li>
+          <li><a href="/home/#contact" id="contacts">Contact us</a></li>
+        </ul>
+        <ul class="sidenav" id="mobile-menu">
+          <li ><a href="/Home" id="mobile" >Home</a></li>
+          <li ><a href="/services" id="mobile">services</a></li>
+          <li ><a href="/clients" id="mobile">clients</a></li>
+          <li ><a href="/home/#contact" id="mobile">contact us</a></li>
+        </ul>
+        <ul class="right">
+          <div>
+            <form >
+              <div>
+              <input id="search" type="text" placeholder=" Search    "  autocomplete="organization"> 
+              <script>
+                $(document).ready(function(){
+                  $("#search").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("#myList li").filter(function() {
+                      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                  });
+                });
+                </script>
+              </div>
+            </form>
+          </div>
+        </ul>
+      </div>
+
+    
+        
+    </nav>
+    
+  </header>
+</body>
+</html>
